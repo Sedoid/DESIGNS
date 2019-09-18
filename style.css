@@ -1,0 +1,171 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	background-color: #237196;
+	box-sizing: border-box;
+}
+
+header{
+	padding: 1em;
+	width: 100%;
+	border:1px solid green;
+}
+header > section{
+	box-sizing: border-box;
+	padding:1em;
+	clear:both;
+	/* border: 2px solid white; */
+	position: relative;
+	/* background-color:white; */
+	padding: 0;
+	margin-bottom: 8em;
+}
+
+header h4{
+	display: inline;
+}
+
+header > section > div{
+	height: 100px;
+}
+
+ul{
+	position: relative;
+
+	/* background-color:red;  */
+	display: inline-block;
+}
+
+ul li{
+	display: inline-block;
+	margin-right: 1em;
+}
+
+	ul li div{
+		position: relative;
+		
+	}
+	
+ul li:first-child a{
+	font-weight: bold;
+	font-size: 1.1em;
+	margin-right: 1em;
+}
+
+ul li a{
+	color:white;
+	text-decoration: none;
+}
+
+
+#d1{
+	position:relative;
+	top: 2em;
+	float:left;
+	/* background-color: red;  */
+	width: 570px;
+	/* border: 1px solid red; */
+}
+
+#d1 img{
+	position: relative;
+	margin-bottom: 100px;
+	/* border:2px solid green; */
+}
+
+
+#d3{
+	float: right;
+	/* background-color: orange;  */
+	width: 200px;
+	box-sizing: border-box;
+	/* border: 1px solid orange; */
+}
+
+#d3 ul li:last-child a{
+	margin-right: 0px;
+
+}
+
+.topic{
+	position: relative;
+		color: white;
+	margin-left: 5%;
+	display: inline-block;
+	width: 400px;
+	height: 300px;
+	/* border: 1px solid black; */
+}
+
+	.topic p{
+		font-size: 1.2em;
+		line-height: 1.5em;
+	}
+	.topic button{
+		position: absolute;
+		bottom: 0px;padding: 15px;
+		border: 0px;
+		border-radius: 5px;
+		color: white;
+		background-color: rgb(219, 25, 116);
+		width: 230px;
+		font-size: 1.5em;
+		margin: 0px auto;
+	}
+
+#video{
+
+	display: inline-block;
+	position:  absolute; /*!important*/
+	right: 50px;
+	width: 300px;
+	height: 300px;
+	border: 1px solid #afa;
+	border-radius: 50%;
+}
+details{
+	margin-right: 1em;
+	display: inline-block;
+	
+}
+
+	#video span{
+		display: none;
+	}
+
+@media screen and (min-width:1600px){
+	.topic{
+		margin-left: 15%;
+	}
+
+	#video{
+		margin-right: 15%
+	}
+
+	#video span{
+		display: inline-block;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.topic{
+		margin: 0px auto;
+		display: block;
+	}
+
+	.topic button{
+		width: 80%;
+		margin: 0px auto;
+
+
+	}
+
+	#video{
+		position: relative;
+		margin: 0px auto;
+	}
+
+}
